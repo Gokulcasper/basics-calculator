@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iphone Calculator</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
 <center>
@@ -13,9 +14,9 @@
         <input id="display" type="text" readonly>
         <div id="keys" class="keys">
             <button class="operatorBtn" onclick="clearDisplay()">AC</button>
-            <button class="operatorBtn" onclick="appendToDisplay('%')">%</button>
             <button class="operatorBtn" onclick="appendToDisplay('/')">/</button>
             <button class="operatorBtn" onclick="appendToDisplay('*')">x</button>
+            <button class="operatorBtn" onclick="appendToDisplay1()"><i class="ri-delete-back-2-fill"></i></button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
@@ -30,7 +31,7 @@
             <button class="operatorBtn" onclick="appendToDisplay('.')">.</button>
             <button onclick="appendToDisplay()"></button>
             <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay()"></button>
+            <button onclick="appendToDisplay('')"></button>
             <button class="operatorBtn" onclick="calculated()">=</button>
         </div>
     </div>
